@@ -31,6 +31,8 @@ jobs:
         pip install --upgrade platformio
     - name: Install library dependencies
       run: pio lib install "sqfmi/Watchy@^1.4.0"
+    - name: Install ESP8266 Arduino Platform
+      run: pio platform install platformio/framework-arduinoespressif8266
     - name: Run PlatformIO
       run: pio ci --board=esp32dev
       env:
