@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        example: [examples/WatchFaces/Basic/7_SEG.ino]
+        example: [examples/WatchFaces/Basic/Basic.ino]
 
     steps:
     - uses: actions/checkout@v2
